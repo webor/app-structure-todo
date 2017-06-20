@@ -1,0 +1,5 @@
+AddHandler server-parsed .html
+AddHandler application/json .json
+AddHandler server-parsed .json
+DirectoryIndex index.html index.htm index.php index.shtml
+Options +IncludesNoExec -ExecCGI

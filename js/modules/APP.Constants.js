@@ -1,0 +1,257 @@
+define( 'APP.Constants', [
+], function(
+) {
+    'use strict';
+
+    return {
+        COMPONENT_ID: 'data-class',
+        DEBUG: 'debug',
+        REDUCER: function() {
+            return {
+                version: 1.0
+            };
+        },
+        AJAX: {
+            SUCCESS: 'success',
+            FAILURE: 'failure',
+            ERROR: 'error'
+        },
+        REQUEST_TYPE: {
+            POST: 'POST',
+            GET: 'GET'
+        },
+        DATA_TYPE: {
+            JSON: 'json'
+        },
+        CONTENT_TYPE: {
+            JSON: 'application/json; charset=utf-8'
+        },
+        EVENT: {
+
+            //Framework Events
+            COMPONENTS_LOADED: 'COMPONENTS_LOADED',
+            M_CONTROLLER_RUN_INITIALIZER: 'M_CONTROLLER_RUN_INITIALIZER',
+            BOOTSTRAP_RESUME: 'BOOTSTRAP_RESUME',
+            BOOTSTRAP_PAUSE: 'BOOTSTRAP_PAUSE',
+            USER_SELECTED: 'USER_SELECTED',
+            SET_USERS_LIST: 'SET_USERS_LIST',
+            SYSTEMS_CONTAINER_READY: 'SYSTEMS_CONTAINER_READY',
+            SYSTEM_ATTRIBUTE_SELECT: 'SYSTEM_ATTRIBUTE_SELECT',
+            SYSTEM_ATTRIBUTE_DESELECT: 'SYSTEM_ATTRIBUTE_DESELECT',
+            OPEN_CLOSE_CHILD_FILTER_FORM: 'OPEN_CLOSE_CHILD_FILTER_FORM',
+            TRANSACTION_SYSTEM_DRAG_START: 'TRANSACTION_SYSTEM_DRAG_START',
+            TRANSACTION_SYSTEM_DROPPED: 'TRANSACTION_SYSTEM_DROPPED',
+            SYSTEM_DETAIL_VIEW_UPDATE: 'SYSTEM_DETAIL_VIEW_UPDATE',
+            UPDATE_DETAIL_VIEW: 'UPDATE_DETAIL_VIEW',
+            SCROLL: 'scroll',
+            FIX_DETAIL_VIEW: 'FIX_DETAIL_VIEW',
+            COPY_VALUE_FROM_DISCREPANCY_LIST: 'COPY_VALUE_FROM_DISCREPANCY_LIST',
+            PAGE_SETTING_TOGGLE: 'PAGE_SETTING_TOGGLE',
+            HANDLE_SEARCH_OF_ITEM: 'HANDLE_SEARCH_OF_ITEM',
+            LOAD_POPUP: 'LOAD_POPUP',
+            EDIT_DISCREPANCY: {
+                HIDE_BUTTON: 'HIDE_BUTTON',
+                SHOW_BUTTON: 'SHOW_BUTTON'
+            }
+        },
+        COMPONENTS: {
+
+            /* Components Specific Errors */
+            COMPONENT_ALREADY_REGISTERED_ERROR: 'COMPONENT ALREADY REGISTERED',
+            COMPONENT_NOT_REGISTERED_ERROR: 'COMPONENT NOT REGISTERED',
+            COMPONENT_NAME_UNKNOWN_ERROR: 'COMPONENT NAME UNKNOWN',
+            NEW_NOT_USED_ERROR: 'New keyword not used to create the component instance',
+            BOOTSTRAP_RUN: 'BOOTSTRAP_RUN'
+        },
+        ANIMATION: {
+            ANIMATION_ALREADY_REGISTERED: 'ANIMATION ALREADY REGISTERED',
+            ELEMENTS_BE_ARRAY: 'ELEMENTS SHOULD BE ARRAY',
+            ELEMENT_NOT_SET: 'ELEMENT NOT SET : ',
+            INVALID_ELEMENT: 'INVALID ELEMENT : ',
+            ELEMENT_DOES_NOT_EXIST: 'ELEMENT DOES NOT EXIST'
+        },
+        COUNT_FILTER: {
+          MAIN_FILTER: 'mainFilter',
+          SUB_FILTER: 'subFilter'
+
+        },
+        EDIT_DISCREPANCY: {
+            PLAY_BUTTON: 'PLAY_BUTTON',
+            DELETE_BUTTON: 'DELETE_BUTTON',
+            EDIT_BUTTON: 'EDIT_BUTTON',
+            VIEW_TYPE: {
+                NORMAL_VIEW: 'NORMAL_VIEW',
+                EDIT_VIEW: 'EDIT_VIEW',
+                DISCREPANCY_VIEW: 'DISCREPANCY_VIEW'
+            }
+        },
+        LOGIN: {
+            TEXT: 'text',
+            PASSWORD: 'password',
+            METHOD_POST: 'post'
+        },
+        ERROR: {
+            TOO_FEW_PARAMETERS: 'TOO_FEW_PARAMETERS',
+            INVALID_PARAMETERS: 'INVALID_PARAMETERS',
+            MISSING_REQUIRED_COMPONENT_PARTS: 'MISSING_REQUIRED_COMPONENT_PARTS',
+            MISSING_DEPENDENCY: 'MISSING_DEPENDENCY',
+            COMP_NOT_REGISTERED: 'COMP_NOT_REGISTERED',
+            DOM_CONTEXT_MISSING: 'DOM_CONTEXT_MISSING',
+            SERVER_ERROR: 'SERVER_ERROR',
+            DROP_READY_STATUS: 'DROP_READY_STATUS'
+        },
+        FILE_CARDS: {
+          ORIGINAL_SOURCE_SYSTEM: 'original_source_system',
+          ATTRIBUTE_1: 'attr_1',
+          SENT: 'sent',
+          BUILDING: 'building'
+        },
+        SYSTEM: {
+            HORIZONTAL_CONSTANT: 344,
+            SYSTEM_WIDTH: 220,
+            HORIZONTAL_SEPERATION: 65,
+            VERTICAL_CONSTANT: 73,
+            VERTICAL_SEPERATION: 65,
+            SYSTEM_HEIGHT: 150,
+            OVERFLOW_BALANCER_X_COORDINATE_INCREMENT_FACTOR: 0.75,
+            ORIGINAL_SOURCE: 'ORIGINAL_SOURCE',
+            NEW_SOURCE: 'NEW_SOURCE',
+            DRAG_SHADOW: 'DRAG_SHADOW',
+            DETAIL_CLONE: 'DETAIL_CLONE'
+        },
+        SYSTEM_ATTRIBUTE_NAME: {
+            SUCCESS: 'success',
+            ERROR: 'error',
+            PRE_PROCESSING: 'preProcessing',
+            PROCESSING: 'processing',
+            SENT: 'sent',
+            NTP: 'ntp'
+        },
+        SYSTEM_ATTRIBUTE_CLASSNAME: {
+            SUCCESS: 'success',
+            ERROR: 'error',
+            PRE_PROCESSING: 'pre-processing',
+            PROCESSING: 'processing',
+            SENT: 'sent',
+            NTP: 'ntp'
+        },
+        SOURCE_SYSTEM_COLLAPSED_HEIGHT: 50,
+        SOURCE_SYSTEM_EXPANDED_HEIGHT: 330,
+        SYSTEM_SPECIAL_ATTRIBUTE_ORDER: -1,
+        COMPONENT_TYPE: {
+            SYSTEM: 'SYSTEM',
+            OVERFLOW_BALANCER: 'OVERFLOW_BALANCER',
+            SYSTEM_TO_BE_SELECTED: 'SYSTEM_TO_BE_SELECTED'
+        },
+        BOOLEAN_TRUE: true,
+        BOOLEAN_FALSE: false,
+        NULL: null,
+        ACTIONS: {
+            SYSTEMS_FLOW_SET_INITIAL_DATA: 'SYSTEMS_FLOW_SET_INITIAL_DATA',
+            CHILD_FILTER_SET_INITIAL_DATA: 'CHILD_FILTER_SET_INITIAL_DATA',
+            CHILD_FILTER_UPDATE_SELECTED_FILTERS: 'CHILD_FILTER_UPDATE_SELECTED_FILTERS',
+            SOURCE_FILTER_SET_INITIAL_DATA: 'SOURCE_FILTER_SET_INITIAL_DATA',
+            SOURCE_FILTER_SET_SELECTED_FILTERS: 'SOURCE_FILTER_SET_SELECTED_FILTERS',
+            SOURCE_FILTER_UPDATE_SELECTED_FILTERS: 'SOURCE_FILTER_UPDATE_SELECTED_FILTERS',
+            SUB_FILTER_SET_INITIAL_DATA: 'SUB_FILTER_SET_INITIAL_DATA',
+            SUB_FILTER_SET_SELECTED_FILTERS: 'SUB_FILTER_SET_SELECTED_FILTERS',
+            TIME_FILTER_SET_INITIAL_DATA: 'TIME_FILTER_SET_INITIAL_DATA',
+            TIME_FILTER_SET_SELECTED_FILTERS: 'TIME_FILTER_SET_SELECTED_FILTERS',
+            SYSTEMS_FLOW_SET_SELECTED_ATTRIBUTE_DATA: 'SYSTEMS_FLOW_SET_SELECTED_ATTRIBUTE_DATA',
+            SYSTEMS_FLOW_SET_NEW_SOURCE: 'SYSTEMS_FLOW_SET_NEW_SOURCE',
+            SYSTEMS_FLOW_RESET_SOURCE: 'SYSTEMS_FLOW_RESET_SOURCE',
+            EDIT_DISCREPANCY_SYSTEM_SELECTED: 'EDIT_DISCREPANCY_SYSTEM_SELECTED',
+            FILE_CARDS_SET_INITIAL_DATA: 'FILE_CARDS_SET_INITIAL_DATA',
+            FILE_CARDS_SET_SELECTED_ATTRIBUTE_DATA: 'FILE_CARDS_SET_SELECTED_ATTRIBUTE_DATA',
+            FILE_CARDS_SET_SELECTED_SUB_ATTRIBUTE_DATA: 'FILE_CARDS_SET_SELECTED_SUB_ATTRIBUTE_DATA',
+            CHILD_FILTER_SET_SELECTED_FILTERS: 'CHILD_FILTER_SET_SELECTED_FILTERS',
+            SYSTEM_FILTER_SET_INITIAL_DATA: 'SYSTEM_FILTER_SET_INITIAL_DATA',
+            SYSTEM_FILTER_SET_SELECTED_DATA: 'SYSTEM_FILTER_SET_SELECTED_DATA',
+            SYSTEM_FILTER_UPDATE_SELECTED_DATA: 'SYSTEM_FILTER_UPDATE_SELECTED_DATA',
+            EDIT_DISCREPANCY_SELECTED_SNAPSHOT_DROPPED: 'EDIT_DISCREPANCY_SELECTED_SNAPSHOT_DROPPED',
+            SYSTEMS_FLOW_SET_DETAIL_PROCESS: 'SYSTEMS_FLOW_SET_DETAIL_PROCESS',
+            COUNT_FILTERS_SET_INITIAL_FILTERS: 'COUNT_FILTERS_SET_INITIAL_FILTERS',
+            COUNT_FILTERS_SET_SELECTED_FILTERS: 'COUNT_FILTERS_SET_SELECTED_FILTERS',
+            DISCREPANCY_FILTER_SET_INITIAL_DATA: 'DISCREPANCY_FILTER_SET_INITIAL_DATA',
+            DISCREPANCY_FILTER_SET_SELECTED_DATA: 'DISCREPANCY_FILTER_SET_SELECTED_DATA',
+            EDIT_DISCREPANCY_UPDATE_PIN_COUNT: 'EDIT_DISCREPANCY_UPDATE_PIN_COUNT',
+            EDIT_DISCREPANCY_EDIT_OPEN: 'EDIT_DISCREPANCY_EDIT_OPEN',
+            EDIT_DISCREPANCY_SAVED: 'EDIT_DISCREPANCY_SAVED',
+            EDIT_DISCREPANCY_RECORDS_RESOLVED: 'EDIT_DISCREPANCY_RECORDS_RESOLVED',
+            SET_SYSTEM_HINGE_POINTS: 'SET_SYSTEM_HINGE_POINTS' //Set offsets for the current selected system in the store.
+        },
+        REDUCERS: {
+            SYSTEMS_FLOW: 'systemsFlow',
+            FILE_CARDS_SYSTEM: 'fileCardsSystem',
+            SOURCE_FILTERS: 'sourceFilters',
+            SUB_FILTERS: 'subFilters',
+            TIME_FILTERS: 'timeFilters',
+            CHILD_FILTERS: 'childFilters',
+            EDIT_DISCREPANCY_SYSTEM: 'editDiscrepancySystem',
+            SYSTEM_FILTERS: 'systemFilters',
+            COUNT_FILTERS: 'countFilters',
+            DISCREPANCY_FILTERS: 'discrepancyFilters'
+        },
+        DRAG_TYPES: {
+            TRANSACTION_SYSTEM_DRAG: 'TRANSACTION_SYSTEM_DRAG'
+        },
+        FILTER_TYPES: {
+            TYPEAHEAD_MULTISELECT: 'multiselectTypeahead',
+            SELECT: 'select',
+            RADIO: 'radio',
+            FULL_DATE: 'fullDate'
+        },
+        DETAIL_TYPE: {
+            RULE: 'rule',
+            ERROR: 'error',
+            HOLD: 'hold',
+            PROCESSED: 'processed',
+            SENT: 'sent',
+            TRANSFORM: 'transform'
+        },
+        DETAIL_TYPE_CLASS: {
+            RULE: 'rule',
+            ERROR: 'error',
+            HOLD: 'hold',
+            PROCESSED: 'processed',
+            SENT: 'sent',
+            TRANSFORM: 'transform'
+        },
+        SYSTEMS_FLOW_CONTAINER: 'SYSTEMS_FLOW_CONTAINER',
+        SYSTEM_DETAIL_PREVIEW: 'SYSTEM_DETAIL_PREVIEW',
+        UNSELECTED_SYSTEM_PROCESS_CARDS: 'UNSELECTED_SYSTEM_PROCESS_CARDS',
+        SELECTED_SYSTEM_PROCESS_CARD: 'SELECTED_SYSTEM_PROCESS_CARD',
+        DETAIL_CONTAINER: 'DETAIL_CONTAINER',
+        SYSTEM_DETAIL_SCROLL_ANIMATION: 'SystemsDetailsScrollAnimation',
+        SYSTEM_DETAIL_CARDS_CONTAINER: 'SYSTEM_DETAIL_CARDS_CONTAINER',
+        SYSTEM_DETAIL: 'SYSTEM_DETAIL',
+        SYSTEMS_PADDING_CONTAINER: 'SYSTEMS_PADDING_CONTAINER',
+        SYSTEM_DETAIL_CARD: {
+            HEIGHT: 88,
+            WIDTH: 167,
+            HALF_WIDTH: 83.5,
+            GAP: 40
+        },
+        SERVICES: {
+            SERVICE_ALREADY_REGISTERED: 'SERVICE ALREADY REGISTERED',
+            CHILD_FILTER_SERVICE: 'CHILD_FILTER_SERVICE',
+            EDIT_DISCREPANCY_RECORDS: 'EDIT_DISCREPANCY_RECORDS',
+            EDIT_DISCREPANCY_PLAY: 'EDIT_DISCREPANCY_PLAY',
+            EDIT_DISCREPANCY_HISTORY: 'EDIT_DISCREPANCY_HISTORY',
+            SAVE_EDIT_DISCREPANCY_RECORDS: 'SAVE_EDIT_DISCREPANCY_RECORDS'
+        },
+        ELEMENT: {
+            BODY: 'body',
+            CONTAINER: 'container'
+        },
+        WEB_WORKER: {
+            PIN_WEB_WORKER: 'PIN_WEB_WORKER',
+            WEB_WORKER_ALREADY_REGISTERED: 'WEB_WORKER_ALREADY_REGISTERED'
+        },
+        SEARCH_DEBOUNCE_TIME: 250,
+        HEADER_HEIGHT: 80, //Height of the header.
+        POPUP: {
+            TABLE_COLUMN_SELECTION: 'TABLE_COLUMN_SELECTION'
+        }
+    };
+});
